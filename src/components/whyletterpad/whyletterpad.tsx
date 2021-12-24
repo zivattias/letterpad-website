@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const WhyLetterpad = () => {
   return (
     <div className='mt-20 w-full md:w-full'>
       <h3 className='px-4'>Why Letterpad ?</h3>
-      <div className='flex flex-wrap mt-4 p-4'>
+      <div className='flex flex-wrap p-4 mt-4'>
         <div className='w-full md:pr-6 md:w-1/2'>
           Letterpad has no distractions, no sidebars, plugins or widgets, with
           nothing to setup or customize, it only has the essentials for a pure

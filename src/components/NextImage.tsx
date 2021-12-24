@@ -1,6 +1,6 @@
-import clsx from 'clsx';
-import Image, { ImageProps } from 'next/image';
-import * as React from 'react';
+import clsx from "clsx";
+import Image, { ImageProps } from "next/image";
+import * as React from "react";
 
 type NextImageProps = {
   useSkeleton?: boolean;
@@ -28,9 +28,9 @@ export default function NextImage({
   ...rest
 }: NextImageProps) {
   const [status, setStatus] = React.useState(
-    useSkeleton ? 'loading' : 'complete'
+    useSkeleton ? "loading" : "complete"
   );
-  const widthIsSet = className?.includes('w-') ?? false;
+  const widthIsSet = className?.includes("w-") ?? false;
 
   return (
     <figure
@@ -41,14 +41,14 @@ export default function NextImage({
         className={clsx(
           imgClassName,
           // text-gray to hide alt text
-          'text-gray-400 bg-gray-400 ',
-          status === 'loading' && clsx('animate-pulse', blurClassName)
+          "text-gray-400 bg-gray-400 ",
+          status === "loading" && clsx("animate-pulse", blurClassName)
         )}
         src={src}
         width={width}
         height={height}
         alt={alt}
-        onLoadingComplete={() => setStatus('complete')}
+        onLoadingComplete={() => setStatus("complete")}
         layout='responsive'
         {...rest}
       />

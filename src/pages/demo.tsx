@@ -6,7 +6,7 @@ export default function Demo() {
   }, []);
 
   return (
-    <div className='bg-slate-200 container flex flex-col px-4 py-36 text-center text-slate-700'>
+    <div className='bg-slate-200 container text-slate-700 flex flex-col px-4 py-36 text-center'>
       <h4>Loading Demo...</h4>
     </div>
   );

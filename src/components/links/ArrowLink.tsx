@@ -1,19 +1,19 @@
-import clsx from 'clsx';
-import * as React from 'react';
+import clsx from "clsx";
+import * as React from "react";
 
-import CustomLink from '@/components/links/CustomLink';
-import { UnstyledLinkProps } from '@/components/links/UnstyledLink';
+import CustomLink from "@/components/links/CustomLink";
+import { UnstyledLinkProps } from "@/components/links/UnstyledLink";
 
 type ArrowLinkProps<C extends React.ElementType> = {
   as?: C;
-  direction?: 'left' | 'right';
+  direction?: "left" | "right";
 } & UnstyledLinkProps &
   React.ComponentProps<C>;
 
 export default function ArrowLink<C extends React.ElementType>({
   children,
   className,
-  direction = 'right',
+  direction = "right",
   as,
   ...rest
 }: ArrowLinkProps<C>) {
@@ -24,8 +24,8 @@ export default function ArrowLink<C extends React.ElementType>({
       {...rest}
       className={clsx(
         className,
-        'gap-[0.25em] group',
-        direction === 'left' && 'flex-row-reverse'
+        "gap-[0.25em] group",
+        direction === "left" && "flex-row-reverse"
       )}
     >
       <span>{children}</span>
@@ -36,10 +36,10 @@ export default function ArrowLink<C extends React.ElementType>({
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
         className={clsx(
-          'relative',
-          'transition-transform duration-200',
-          direction === 'right' ? 'motion-safe:-translate-x-1' : 'rotate-180',
-          'group-hover:translate-x-0'
+          "relative",
+          "transition-transform duration-200",
+          direction === "right" ? "motion-safe:-translate-x-1" : "rotate-180",
+          "group-hover:translate-x-0"
         )}
       >
         <path
@@ -52,9 +52,9 @@ export default function ArrowLink<C extends React.ElementType>({
           strokeWidth='1.5'
           strokeLinecap='round'
           className={clsx(
-            'transition-all duration-200 origin-left',
-            'opacity-0 motion-safe:-translate-x-1',
-            'group-hover:opacity-100 group-hover:translate-x-0'
+            "transition-all duration-200 origin-left",
+            "opacity-0 motion-safe:-translate-x-1",
+            "group-hover:opacity-100 group-hover:translate-x-0"
           )}
         />
       </svg>

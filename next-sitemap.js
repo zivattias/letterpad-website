@@ -1,8 +1,8 @@
 // !STARTERCONF Change the siteUrl
 module.exports = {
-  siteUrl: 'https://letterpad.app/',
+  siteUrl: "https://letterpad.app/",
   generateRobotsTxt: true,
   robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }],
+    policies: [{ userAgent: "*", allow: "/" }],
   },
 };
