@@ -4,20 +4,20 @@ export const Features = () => {
       <h3 className='px-4'>Features</h3>
       <div className='flex flex-wrap'>
         <div className='w-full md:w-4/12'>
-          <div className='flex flex-col mt-4 relative'>
+          <div className='flex relative flex-col mt-4'>
             <div className='flex-auto px-4 py-5'>
-              <h6 className='font-semibold mb-1 text-l'>Fast and Flexible</h6>
-              <p className='mb-4 text-blueGray-500 text-sm'>
+              <h6 className='text-l mb-1 font-semibold'>Fast and Flexible</h6>
+              <p className='text-blueGray-500 mb-4 text-sm'>
                 Letterpad uses Graphql which makes your blog faster due to
                 minimal data fetching. This also makes it possible to create a
                 client with any language.
               </p>
             </div>
           </div>
-          <div className='flex flex-col min-w-0 relative'>
+          <div className='flex relative flex-col min-w-0'>
             <div className='flex-auto px-4 py-5'>
-              <h6 className='font-semibold mb-1 text-l'>Image CDN</h6>
-              <p className='mb-4 text-blueGray-500 text-sm'>
+              <h6 className='text-l mb-1 font-semibold'>Image CDN</h6>
+              <p className='text-blueGray-500 mb-4 text-sm'>
                 Letterpad provides services like UnSplash and Cloudinary to
                 provide optimsed images for screens of different size.
               </p>
@@ -25,20 +25,20 @@ export const Features = () => {
           </div>
         </div>
         <div className='w-full md:w-4/12'>
-          <div className='flex flex-col min-w-0 mt-4 relative'>
+          <div className='flex relative flex-col mt-4 min-w-0'>
             <div className='flex-auto px-4 py-5'>
-              <h6 className='font-semibold mb-1 text-l'>Integrations</h6>
-              <p className='mb-4 text-blueGray-500 text-sm'>
+              <h6 className='text-l mb-1 font-semibold'>Integrations</h6>
+              <p className='text-blueGray-500 mb-4 text-sm'>
                 It can easily be integrated with Cloudinary for image cdn,
                 Unsplash, Mysql, Postgress, Sqlite, Sentry, Google Analytics
                 etc.
               </p>
             </div>
           </div>
-          <div className='flex flex-col min-w-0 relative'>
+          <div className='flex relative flex-col min-w-0'>
             <div className='flex-auto px-4 py-5'>
-              <h6 className='font-semibold mb-1 text-l'>Clean Permalinks</h6>
-              <p className='mb-4 text-blueGray-500 text-sm'>
+              <h6 className='text-l mb-1 font-semibold'>Clean Permalinks</h6>
+              <p className='text-blueGray-500 mb-4 text-sm'>
                 All links in Letterpad is automatically created with clean,
                 readable, well-structured permalinks which are easily
                 understood.
@@ -47,19 +47,19 @@ export const Features = () => {
           </div>
         </div>
         <div className='w-full md:w-4/12'>
-          <div className='flex flex-col min-w-0 mt-4 relative'>
+          <div className='flex relative flex-col mt-4 min-w-0'>
             <div className='flex-auto px-4 py-5'>
-              <h6 className='font-semibold mb-1 text-l'>Multiuser Platform</h6>
-              <p className='mb-4 text-blueGray-500 text-sm'>
+              <h6 className='text-l mb-1 font-semibold'>Multiuser Platform</h6>
+              <p className='text-blueGray-500 mb-4 text-sm'>
                 Letterpad allows multi registration which allows you to have
                 multiple users with a single installation.
               </p>
             </div>
           </div>
-          <div className='flex flex-col min-w-0 relative'>
+          <div className='flex relative flex-col min-w-0'>
             <div className='flex-auto px-4 py-5'>
-              <h6 className='font-semibold mb-1 text-l'>Rich Text Editor</h6>
-              <p className='mb-4 text-blueGray-500 text-sm'>
+              <h6 className='text-l mb-1 font-semibold'>Rich Text Editor</h6>
+              <p className='text-blueGray-500 mb-4 text-sm'>
                 Letterpad Editor has been designed to give you a distraction
                 free environment containing inline tools along with inbuilt
                 markdown
