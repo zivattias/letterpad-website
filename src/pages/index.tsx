@@ -1,57 +1,8 @@
 import Image from 'next/image';
 import * as React from 'react';
 
-import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
-import CustomLink from '@/components/links/CustomLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
-
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
-
-function HomePage1() {
-  return (
-    <>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
-
-      <main>
-        <section className='bg-white'>
-          <div className='flex flex-col items-center justify-center layout min-h-screen text-center'>
-            <h1>Letterpad is a blog publishing platform.</h1>
-            <p className='mt-2 text-gray-800 text-sm'>
-              It is also an opensource project.
-            </p>
-            <p className='mt-2 text-gray-700 text-sm'>
-              <ArrowLink href='https://github.com/letterpad/letterpad'>
-                See the repository
-              </ArrowLink>
-            </p>
-
-            <ButtonLink
-              className='mt-6'
-              href='/demo'
-              variant='light'
-              target='_blank'
-            >
-              Demo
-            </ButtonLink>
-          </div>
-
-          <Image
-            src='/images/hero.png'
-            alt='Demo Image'
-            width={800}
-            height={500}
-            objectFit='cover'
-          />
-        </section>
-      </main>
-    </>
-  );
-}
 
 export default function Homepage() {
   return (

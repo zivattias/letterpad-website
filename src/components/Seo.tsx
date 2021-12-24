@@ -5,12 +5,12 @@ import { openGraph } from '@/lib/helper';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  url: 'https://tsnext-tw.thcl.dev',
-  image: 'https://theodorusclarence.com/favicon/large-og.jpg',
+  title: 'Letterpad',
+  siteName: 'Letterpad',
+  description: 'Letterpad is a CMS for blogs.',
+  url: 'https://letterpad.app',
+  image:
+    'https://res.cloudinary.com/abhisheksaha/image/upload/v1637920329/blog-images/f1exwgzylshcklpdsrxw.png',
   type: 'website',
   robots: 'follow, index',
 };
