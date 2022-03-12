@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import { Comparison } from "@/components/comparison/comparison";
 import { Features } from "@/components/features/features";
 import Hero from "@/components/hero/hero";
 import Seo from "@/components/Seo";
@@ -15,6 +16,7 @@ export default function Homepage() {
         <Hero />
         <Features />
         <WhyLetterpad />
+        <Comparison />
         <TechnologyLogos />
       </main>
     </>
