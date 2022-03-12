@@ -218,13 +218,15 @@ export const Comparison = () => {
       for your blog.
       <div className='border-b border-gray-200 flex h-20 items-center px-4'>
         <div className='w-60'></div>
-        <div className='flex-grow font-semibold text-center text-lg'>
+        <div className='flex-grow text-center text-sm md:font-semibold md:text-lg'>
           Letterpad
         </div>
-        <div className='flex-grow font-semibold text-center text-lg'>
+        <div className='flex-grow text-center text-sm md:font-semibold md:text-lg'>
           Medium
         </div>
-        <div className='flex-grow font-semibold text-center text-lg'>Ghost</div>
+        <div className='flex-grow text-center text-sm md:font-semibold md:text-lg'>
+          Ghost
+        </div>
       </div>
       <div className='bg-gray-100 border-b border-gray-200 flex h-12 items-center px-4'>
         <div className='font-medium'>Feature Group</div>
