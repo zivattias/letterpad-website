@@ -175,7 +175,7 @@ const features: IProps = {
       description: "",
     },
     ghost: {
-      value: <No />,
+      value: <Yes />,
       description: "",
     },
   },
