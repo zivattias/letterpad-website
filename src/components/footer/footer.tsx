@@ -14,7 +14,7 @@ const Footer = () => {
               <li>
                 <a
                   className='text-gray-600 hover:text-gray-800'
-                  href='https://gihub.com/letterpad/letterpad'
+                  href='https://github.com/letterpad/letterpad'
                 >
                   Github
                 </a>
