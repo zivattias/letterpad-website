@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 const Yes = () => (
   <div className='flex justify-center'>
     <svg
-      className='w-6 h-6 text-green-600'
+      className='h-6 text-green-600 w-6'
       fill='none'
       stroke='currentColor'
       viewBox='0 0 24 24'
@@ -22,7 +22,7 @@ const Yes = () => (
 const No = () => (
   <div className='flex justify-center'>
     <svg
-      className='w-6 h-6 text-red-600'
+      className='h-6 text-red-600 w-6'
       fill='none'
       stroke='currentColor'
       viewBox='0 0 24 24'
@@ -211,24 +211,24 @@ const features: IProps = {
 
 export const Comparison = () => {
   return (
-    <div className='flex flex-col w-full md:pt-40'>
+    <div className='flex flex-col px-4 w-full md:pt-40'>
       <h3 className='pb-8'>Comparison</h3>
       Every Platform has its own benefits. Every CMS has its own pros and cons.
       The below comparison will help you better in choosing the right platform
       for your blog.
-      <div className='flex items-center px-4 h-20 border-b border-gray-200'>
+      <div className='border-b border-gray-200 flex h-20 items-center px-4'>
         <div className='w-60'></div>
-        <div className='flex-grow text-sm text-center md:text-lg md:font-semibold'>
+        <div className='flex-grow text-center text-sm md:font-semibold md:text-lg'>
           Letterpad
         </div>
-        <div className='flex-grow text-sm text-center md:text-lg md:font-semibold'>
+        <div className='flex-grow text-center text-sm md:font-semibold md:text-lg'>
           Medium
         </div>
-        <div className='flex-grow text-sm text-center md:text-lg md:font-semibold'>
+        <div className='flex-grow text-center text-sm md:font-semibold md:text-lg'>
           Ghost
         </div>
       </div>
-      <div className='flex items-center px-4 h-12 bg-gray-100 border-b border-gray-200'>
+      <div className='bg-gray-100 border-b border-gray-200 flex h-12 items-center px-4'>
         <div className='font-medium'>Feature Group</div>
       </div>
       {Object.keys(features).map((title) => {
@@ -236,24 +236,24 @@ export const Comparison = () => {
         return (
           <div
             key={title}
-            className='flex items-center px-4 py-8 h-12 border-b border-gray-200'
+            className='border-b border-gray-200 flex h-12 items-center px-4 py-8'
           >
-            <div className='w-60 text-sm'>{title}</div>
-            <div className='flex flex-col flex-grow justify-center w-0 text-center'>
+            <div className='text-sm w-60'>{title}</div>
+            <div className='flex flex-col flex-grow justify-center text-center w-0'>
               {letterpad.value}
-              <div className='text-slate-600 hidden text-sm md:block'>
+              <div className='hidden text-slate-600 text-sm md:block'>
                 {letterpad.description}
               </div>
             </div>
-            <div className='flex flex-col flex-grow justify-center w-0 text-center'>
+            <div className='flex flex-col flex-grow justify-center text-center w-0'>
               {medium.value}
-              <div className='text-slate-600 hidden text-sm md:block'>
+              <div className='hidden text-slate-600 text-sm md:block'>
                 {medium.description}
               </div>
             </div>
-            <div className='flex flex-col flex-grow justify-center w-0 text-center'>
+            <div className='flex flex-col flex-grow justify-center text-center w-0'>
               {ghost.value}
-              <div className='text-slate-600 hidden text-sm md:block'>
+              <div className='hidden text-slate-600 text-sm md:block'>
                 {ghost.description}
               </div>
             </div>
