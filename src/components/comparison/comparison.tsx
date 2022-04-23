@@ -181,11 +181,25 @@ const features: IProps = {
   },
   Analytics: {
     letterpad: {
-      value: <No />,
-      description: "In roadmap",
+      value: <Yes />,
+      description: "",
     },
     medium: {
       value: <Yes />,
+      description: "",
+    },
+    ghost: {
+      value: <Yes />,
+      description: "",
+    },
+  },
+  "Custom Domain Mapping": {
+    letterpad: {
+      value: <Yes />,
+      description: "",
+    },
+    medium: {
+      value: <No />,
       description: "",
     },
     ghost: {
