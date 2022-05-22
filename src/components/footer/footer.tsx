@@ -1,46 +1,39 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
-    <footer className='mt-20 border-t border-gray-200'>
-      <div className='container flex flex-col flex-wrap px-4 py-8 mx-auto md:flex-row md:flex-nowrap md:items-center lg:items-start'>
-        <div className='flex-shrink-0 mx-auto w-64 text-center md:mx-0 md:text-left'>
-          <a className='flex justify-center items-center text-2xl font-bold text-gray-600 md:justify-start'>
-            Letterpad
-          </a>
-          <p className='mt-2 text-sm text-gray-500'>Licensed under MIT.</p>
-        </div>
-        <div className='justify-end mt-4 w-full text-center lg:flex lg:text-left'>
-          <div className='px-4 w-full md:w-1/2 lg:w-1/3'>
-            <ul className='mb-8 space-y-2 text-sm list-none'>
-              <li>
-                <a
-                  className='text-gray-600 hover:text-gray-800'
-                  href='https://github.com/letterpad/letterpad'
-                >
-                  Github
-                </a>
-              </li>
-              <li>
-                <a
-                  className='text-gray-600 hover:text-gray-800'
-                  href='https://github.com/letterpad/letterpad-client'
-                >
-                  Letterpad Client
-                </a>
-              </li>
-              <li>
-                <a
-                  className='text-gray-600 hover:text-gray-800'
-                  href='https://demo.letterpad.app'
-                >
-                  Demo Blog
-                </a>
-              </li>
-            </ul>
+    <footer className='bg-black border-gray-200 border-t mt-20 py-8 text-gray-300 text-sm'>
+      <div className='mx-auto lg:w-4/5'>
+        <div className='container flex flex-col flex-wrap mx-auto px-4 md:flex-nowrap md:flex-row md:items-center lg:items-start'>
+          <div className='flex-shrink-0 mx-auto text-center w-80 md:mx-0 md:text-left'>
+            <a className='flex font-bold items-center justify-center text-2xl text-gray-600 md:justify-start'>
+              <Image
+                src='/images/logos/lp-white.svg'
+                width={40}
+                height={40}
+                alt='logo'
+              />
+            </a>
+          </div>
+          <div className='justify-end text-center w-full lg:flex lg:text-left'>
+            <div className='px-4 w-full md:w-1/2 lg:w-2/3'>
+              <p>
+                Letterpad is a blogging platform focused on speed, ease of use
+                and versatility. It has been openly developed from the ground up
+                to enable anyone to share their creativity online.
+              </p>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <div className='text-gray-500'>Copyright © 2022, Letterpad.</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className='flex justify-center'>
-        <p className='text-base text-gray-400'></p>
+        <div className='flex justify-center'>
+          <p className='text-base text-gray-400'></p>
+        </div>
       </div>
     </footer>
   );

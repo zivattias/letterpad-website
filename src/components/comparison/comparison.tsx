@@ -225,7 +225,7 @@ const features: IProps = {
 
 export const Comparison = () => {
   return (
-    <div className='flex flex-col px-4 w-full md:pt-40'>
+    <div className='flex flex-col px-4 w-full'>
       <h3 className='pb-8'>Comparison</h3>
       Every Platform has its own benefits. Every CMS has its own pros and cons.
       The below comparison will help you better in choosing the right platform
