@@ -1,13 +1,17 @@
 import Image from "next/image";
 
+import { EventAction } from "@/lib/track";
+import { useTracking } from "@/hooks/usetracking";
+
 import ButtonLink from "@/components/links/ButtonLink";
 
 const Hero = () => {
+  const track = useTracking();
   return (
     <section className='bg-white'>
       <div className='container flex flex-col gap-8 items-center mx-auto my-12 md:flex-row md:my-24'>
         {/* <!--Left Col--> */}
-        <div className='text-center w-full lg:py-6 lg:w-1/2'>
+        <div className='w-full text-center lg:py-6 lg:w-1/2'>
           <div className='shadow-lg'>
             <Image
               src='/images/hero1.png'
@@ -20,13 +24,13 @@ const Hero = () => {
           </div>
         </div>
         {/* <!--Right Col--> */}
-        <div className='flex flex-col items-start justify-center pb-24 pt-12 px-4 w-full lg:w-1/2'>
+        <div className='flex flex-col justify-center items-start px-4 pt-12 pb-24 w-full lg:w-1/2'>
           <p className='tracking-loose uppercase'></p>
-          <h1 className='font-medium my-4 text-3xl'>
+          <h1 className='my-4 text-3xl font-medium'>
             Letterpad is a blogging platform focussed on speed, ease of use and
             versatility.
           </h1>
-          <p className='leading-normal mb-4'>
+          <p className='mb-4 leading-normal'>
             Letterpad has a minimal footprint in terms of features and are best
             suited for personal blogs.
           </p>
@@ -35,7 +39,14 @@ const Hero = () => {
               href='/admin/login'
               variant='outline'
               target='_blank'
-              className='rounded-none text-sm uppercase'
+              className='text-sm uppercase rounded-none'
+              onClick={() => {
+                track({
+                  eventAction: EventAction.Click,
+                  eventCategory: "login",
+                  eventLabel: `Hero-CTA`,
+                });
+              }}
             >
               Login
             </ButtonLink>
@@ -43,7 +54,14 @@ const Hero = () => {
               href='/admin/register'
               variant='dark'
               target='_blank'
-              className='rounded-none text-sm uppercase'
+              className='text-sm uppercase rounded-none'
+              onClick={() => {
+                track({
+                  eventAction: EventAction.Click,
+                  eventCategory: "register",
+                  eventLabel: `Hero-CTA`,
+                });
+              }}
             >
               Register
             </ButtonLink>
