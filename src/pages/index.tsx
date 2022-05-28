@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import AiEditor from "@/components/ai-editor/AiEditor";
 import { Comparison } from "@/components/comparison/comparison";
 import { Features } from "@/components/features/features";
 import Hero from "@/components/hero/hero";
@@ -22,7 +23,7 @@ export default function Homepage() {
         <div className='relative z-10'>
           <PostImage />
         </div>
-        <div className='-translate-y-28 bg-gray-50'>
+        <div className='bg-gray-50 -translate-y-28'>
           <div className='pt-24'>
             <div className='mx-auto lg:w-4/5'>
               <WhyLetterpad />
@@ -30,8 +31,19 @@ export default function Homepage() {
           </div>
         </div>
         <div className='mx-auto lg:w-4/5'>
-          <Comparison />
-          <TechnologyLogos />
+          <div className='mb-20'>
+            <Comparison />
+          </div>
+        </div>
+        <div className='bg-gray-50'>
+          <div className='py-10 mx-auto md:py-20 lg:w-4/5'>
+            <AiEditor />
+          </div>
+        </div>
+        <div className='mx-auto lg:w-4/5'>
+          <div className='my-10 md:my-20'>
+            <TechnologyLogos />
+          </div>
         </div>
       </main>
     </>

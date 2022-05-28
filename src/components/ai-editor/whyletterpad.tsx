@@ -2,7 +2,7 @@ const WhyLetterpad = () => {
   return (
     <div className='pb-20 mt-32 w-full md:w-full'>
       <h3 className='px-4 font-medium'>Publishing Content</h3>
-      <div className='flex flex-wrap p-4 pt-0 font-light text-gray-700'>
+      <div className='flex flex-wrap p-4 pt-0 font-light text-gray-600'>
         <div className='mt-6 w-full md:pr-6 md:w-1/2'>
           Letterpad has no distractions, no sidebars, plugins or widgets, with
           nothing to setup or customize, it only has the essentials for a pure

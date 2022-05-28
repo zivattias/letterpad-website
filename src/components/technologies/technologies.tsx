@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const TechnologyLogos = () => {
   return (
-    <div className='flex flex-col gap-12 px-4 pt-20 md:flex-row md:gap-4 md:pt-40'>
+    <div className='flex flex-col gap-12 px-4 md:flex-row md:gap-4'>
       <h3>Technologies</h3>
       <div className='flex justify-around w-full'>
         <Image
