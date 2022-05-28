@@ -13,7 +13,7 @@ const Hero = () => {
     <section className='bg-white'>
       <div className='container flex flex-col-reverse gap-8 items-center mx-auto my-12 lg:flex-row lg:my-24'>
         {/* <!--Left Col--> */}
-        <div className='hidden w-full text-center lg:block lg:py-6 lg:w-2/5'>
+        <div className='hidden w-full text-center lg:block lg:py-6 lg:w-1/2'>
           <div className=''>
             <Image
               src={HeroImage}
@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
         {/* <!--Right Col--> */}
-        <div className='flex flex-col justify-center items-start px-4 pt-12 pb-24 w-full lg:w-3/5'>
+        <div className='flex flex-col justify-center items-start px-4 pt-12 pb-24 w-full lg:w-1/2'>
           <p className='tracking-loose uppercase'></p>
           <h1 className='my-4 text-3xl font-medium'>
             Letterpad is a blogging platform focussed on speed, ease of use and
