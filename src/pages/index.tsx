@@ -15,8 +15,10 @@ export default function Homepage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
       <main>
-        <Hero />
-        <div className='mx-auto lg:w-4/5'>
+        <div className='translate-x-0 lg:-translate-x-28'>
+          <Hero />
+        </div>
+        <div className='mx-auto -mt-20 lg:w-4/5'>
           <Features />
         </div>
 

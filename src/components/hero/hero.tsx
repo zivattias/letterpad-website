@@ -11,7 +11,7 @@ const Hero = () => {
   const track = useTracking();
   return (
     <section className='bg-white'>
-      <div className='container flex flex-col-reverse gap-8 items-center mx-auto my-12 lg:flex-row lg:my-24'>
+      <div className='container flex flex-col-reverse gap-8 items-center my-12 lg:flex-row lg:mx-auto lg:my-24'>
         {/* <!--Left Col--> */}
         <div className='hidden w-full text-center lg:block lg:py-6 lg:w-1/2'>
           <div className=''>
@@ -22,6 +22,7 @@ const Hero = () => {
               height={400}
               layout='responsive'
               objectFit='contain'
+              objectPosition='-30px -20px'
             />
           </div>
         </div>
