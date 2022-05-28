@@ -18,8 +18,8 @@ const Hero = () => {
             <Image
               src={HeroImage}
               alt='Demo Image'
-              width={300}
-              height={340}
+              width={400}
+              height={400}
               layout='responsive'
               objectFit='contain'
             />
