@@ -5,26 +5,28 @@ import { useTracking } from "@/hooks/usetracking";
 
 import ButtonLink from "@/components/links/ButtonLink";
 
+import HeroImage from "./heroimage.svg";
+
 const Hero = () => {
   const track = useTracking();
   return (
     <section className='bg-white'>
       <div className='container flex flex-col-reverse gap-8 items-center mx-auto my-12 lg:flex-row lg:my-24'>
         {/* <!--Left Col--> */}
-        <div className='w-full text-center lg:py-6 lg:w-1/2'>
-          <div className='shadow-lg'>
+        <div className='hidden w-full text-center lg:block lg:py-6 lg:w-2/5'>
+          <div className=''>
             <Image
-              src='/images/hero1.png'
+              src={HeroImage}
               alt='Demo Image'
-              width={780}
-              height={440}
+              width={300}
+              height={340}
               layout='responsive'
-              objectFit='fill'
+              objectFit='contain'
             />
           </div>
         </div>
         {/* <!--Right Col--> */}
-        <div className='flex flex-col justify-center items-start px-4 pt-12 pb-24 w-full lg:w-1/2'>
+        <div className='flex flex-col justify-center items-start px-4 pt-12 pb-24 w-full lg:w-3/5'>
           <p className='tracking-loose uppercase'></p>
           <h1 className='my-4 text-3xl font-medium'>
             Letterpad is a blogging platform focussed on speed, ease of use and
@@ -65,12 +67,11 @@ const Hero = () => {
             >
               Register
             </ButtonLink>
-            <div>
+            <div className='mt-2'>
               <a
                 href='https://www.producthunt.com/posts/letterpad?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-letterpad'
                 target='_blank'
                 rel='noreferrer'
-                className='mt-1'
               >
                 <Image
                   src='https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=336840&theme=light'
@@ -78,6 +79,7 @@ const Hero = () => {
                   // style={{ width: 250, height: 54 }}
                   width={176}
                   height={40}
+                  className='grayscale'
                 />
               </a>
             </div>

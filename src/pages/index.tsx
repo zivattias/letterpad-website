@@ -15,15 +15,15 @@ export default function Homepage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
       <main>
+        <Hero />
         <div className='mx-auto lg:w-4/5'>
-          <Hero />
           <Features />
         </div>
 
         <div className='relative z-10'>
           <PostImage />
         </div>
-        <div className='bg-gray-50 -translate-y-28'>
+        <div className='bg-gray-50 -translate-y-52'>
           <div className='pt-24'>
             <div className='mx-auto lg:w-4/5'>
               <WhyLetterpad />
