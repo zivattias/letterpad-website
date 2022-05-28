@@ -22,7 +22,7 @@ const Header = () => {
         <div className='flex flex-grow justify-end items-center'>
           <div className='text-sm font-bold'>
             <a
-              href='https://github/letterpad/letterpad'
+              href='https://github.com/letterpad/letterpad'
               className='text-slate-700 inline-block mr-4 font-normal hover:text-slate-800'
               target='_blank'
               rel='noreferrer'
