@@ -11,7 +11,7 @@ const Hero = () => {
   const track = useTracking();
   return (
     <section className='bg-white'>
-      <div className='container flex flex-col-reverse gap-8 items-start my-12 lg:flex-row lg:mx-auto lg:my-24'>
+      <div className='container flex flex-col-reverse gap-8 items-start lg:flex-row lg:mx-auto'>
         {/* <!--Left Col--> */}
         <div className='hidden w-full text-center lg:block lg:py-6 lg:w-1/2'>
           <div className=''>
@@ -27,13 +27,19 @@ const Hero = () => {
           </div>
         </div>
         {/* <!--Right Col--> */}
-        <div className='flex flex-col justify-center items-start px-4 pt-12 pb-24 w-full lg:w-1/2'>
+        <div className='pb-18 flex flex-col justify-center items-start px-4 pt-12 w-full lg:w-1/2'>
           <p className='tracking-loose uppercase'></p>
-          <h1 className='my-4 text-4xl font-medium'>
+          <h1
+            className='my-4 text-3xl font-semibold'
+            style={{ fontSize: "28px", lineHeight: "43.48px" }}
+          >
             Letterpad is a blogging platform focussed on speed, ease of use and
             versatility.
           </h1>
-          <p className='mb-4 leading-normal'>
+          <p
+            className='mb-4 leading-normal'
+            style={{ fontSize: "20px", lineHeight: "31px" }}
+          >
             Letterpad has a minimal footprint in terms of features and are best
             suited for personal blogs.
           </p>

@@ -24,7 +24,7 @@ export const Features = () => {
                 />
                 Fast and Flexible
               </h6>
-              <p className='text-blueGray-500 mb-4 text-sm'>
+              <p className='mt-3 mb-4 text-sm text-gray-500'>
                 Letterpad uses Graphql which makes your blog faster due to
                 minimal data fetching. This also makes it possible to create a
                 client with any language.
@@ -37,7 +37,7 @@ export const Features = () => {
                 <Image src={CDNIcon} width='24' height='24' alt='Image CDN' />
                 Image CDN
               </h6>
-              <p className='text-blueGray-500 mb-4 text-sm'>
+              <p className='mt-3 mb-4 text-sm text-gray-500'>
                 Letterpad provides services like UnSplash and Cloudinary to
                 provide optimsed images for screens of different size.
               </p>
@@ -56,7 +56,7 @@ export const Features = () => {
                 />
                 Integrations
               </h6>
-              <p className='text-blueGray-500 mb-4 text-sm'>
+              <p className='mt-3 mb-4 text-sm text-gray-500'>
                 It can easily be integrated with Cloudinary for image cdn,
                 Unsplash, Mysql, Postgress, Sqlite, Sentry, Google Analytics
                 etc.
@@ -74,7 +74,7 @@ export const Features = () => {
                 />
                 AI Enabled Editor
               </h6>
-              <p className='text-blueGray-500 mb-4 text-sm'>
+              <p className='mt-3 mb-4 text-sm text-gray-500'>
                 Using the AI Enabled editor, you will be able to fix grammatical
                 mistakes and take advantage of better suggestions.
               </p>
@@ -93,7 +93,7 @@ export const Features = () => {
                 />
                 Build audience
               </h6>
-              <p className='text-blueGray-500 mb-4 text-sm'>
+              <p className='mt-3 mb-4 text-sm text-gray-500'>
                 With the subscribers features, you will be able to develop your
                 audience with time. They will be notified with every post you
                 publish.
@@ -111,7 +111,7 @@ export const Features = () => {
                 />
                 Multiuser Platform
               </h6>
-              <p className='text-blueGray-500 mb-4 text-sm'>
+              <p className='mt-3 mb-4 text-sm text-gray-500'>
                 Letterpad allows multi registration which allows you to have
                 multiple users with a single installation.
               </p>

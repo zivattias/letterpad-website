@@ -15,10 +15,10 @@ export default function Homepage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
       <main>
-        <div className='translate-x-0 lg:-translate-x-28'>
+        <div className='mt-32 translate-x-0 lg:-translate-x-28'>
           <Hero />
         </div>
-        <div className='mx-auto -mt-20 lg:w-4/5'>
+        <div className='mx-auto mt-20 lg:mt-0 lg:w-4/5'>
           <Features />
         </div>
 

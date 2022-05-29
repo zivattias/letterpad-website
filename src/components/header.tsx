@@ -10,7 +10,7 @@ const Header = () => {
   const track = useTracking();
   const [isOpen, setOpen] = useState(false);
   return (
-    <nav className='fixed top-0 z-20 p-4 px-2 py-2.5 w-full bg-white rounded border-gray-200 shadow-md sm:px-4'>
+    <nav className='fixed top-0 z-20 p-4 px-2 py-5 w-full bg-white rounded border-gray-200 shadow-md sm:px-4'>
       <div className='container flex flex-wrap justify-between items-center mx-auto lg:w-4/5'>
         <a href='https://flowbite.com' className='flex items-center'>
           <Image
