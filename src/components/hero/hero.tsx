@@ -11,7 +11,7 @@ const Hero = () => {
   const track = useTracking();
   return (
     <section className='bg-white'>
-      <div className='container flex flex-col-reverse gap-8 items-center my-12 lg:flex-row lg:mx-auto lg:my-24'>
+      <div className='container flex flex-col-reverse gap-8 items-start my-12 lg:flex-row lg:mx-auto lg:my-24'>
         {/* <!--Left Col--> */}
         <div className='hidden w-full text-center lg:block lg:py-6 lg:w-1/2'>
           <div className=''>
@@ -29,7 +29,7 @@ const Hero = () => {
         {/* <!--Right Col--> */}
         <div className='flex flex-col justify-center items-start px-4 pt-12 pb-24 w-full lg:w-1/2'>
           <p className='tracking-loose uppercase'></p>
-          <h1 className='my-4 text-3xl font-medium'>
+          <h1 className='my-4 text-4xl font-medium'>
             Letterpad is a blogging platform focussed on speed, ease of use and
             versatility.
           </h1>
@@ -38,21 +38,6 @@ const Hero = () => {
             suited for personal blogs.
           </p>
           <div className='flex gap-2 items-center mt-6'>
-            <ButtonLink
-              href='/admin/login'
-              variant='outline'
-              target='_blank'
-              className='text-sm uppercase rounded-none'
-              onClick={() => {
-                track({
-                  eventAction: EventAction.Click,
-                  eventCategory: "login",
-                  eventLabel: `Hero-CTA`,
-                });
-              }}
-            >
-              Login
-            </ButtonLink>
             <ButtonLink
               href='/admin/register'
               variant='dark'
