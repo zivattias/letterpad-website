@@ -9,9 +9,9 @@ import { EventInfo } from "@/lib/track";
 
 declare global {
   interface Window {
-    dataLayer: unknown;
-    gtag: unknown;
-    ga: unknown;
+    dataLayer: any;
+    gtag: any;
+    ga: any;
   }
 }
 
