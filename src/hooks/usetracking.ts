@@ -1,4 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-nocheck
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -7,13 +9,13 @@ import { EventInfo } from "@/lib/track";
 
 declare global {
   interface Window {
-    dataLayer: any;
-    gtag: any;
-    ga: any;
+    dataLayer: unknown;
+    gtag: unknown;
+    ga: unknown;
   }
 }
 
-const trackingId = "UA-120251616-2";
+const trackingId = "UA-120251616-1";
 
 export const useTracking = () => {
   const router = useRouter();
