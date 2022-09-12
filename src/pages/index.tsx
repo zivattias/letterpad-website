@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import Analytics from "@/components/analytics/analytics";
 // import AiEditor from "@/components/ai-editor/AiEditor";
 import { Comparison } from "@/components/comparison/comparison";
 import { Features } from "@/components/features/features";
@@ -29,6 +30,13 @@ export default function Homepage() {
           <div className='pt-24'>
             <div className='mx-auto lg:w-4/5'>
               <WhyLetterpad />
+            </div>
+          </div>
+        </div>
+        <div className='-mb-28 -translate-y-52'>
+          <div className='pt-24'>
+            <div className='mx-auto lg:w-4/5'>
+              <Analytics />
             </div>
           </div>
         </div>
