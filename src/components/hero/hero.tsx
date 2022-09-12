@@ -33,15 +33,15 @@ const Hero = () => {
             className='my-4 text-3xl font-semibold'
             style={{ fontSize: "28px", lineHeight: "43.48px" }}
           >
-            Letterpad is a blogging platform focussed on speed, ease of use and
-            versatility.
+            Letterpad is a free blog publishing platform. It provides
+            distraction free writing and uses language tool to help you write
+            better.
           </h1>
           <p
             className='mb-4 leading-normal'
             style={{ fontSize: "20px", lineHeight: "31px" }}
           >
-            Letterpad has a minimal footprint in terms of features and are best
-            suited for personal blogs.
+            Best suited for personal blogs.
           </p>
           <div className='flex gap-2 items-center mt-6'>
             <ButtonLink

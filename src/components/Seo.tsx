@@ -5,9 +5,10 @@ import { openGraph } from "@/lib/helper";
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: "Letterpad",
-  siteName: "Letterpad",
-  description: "Letterpad is a CMS for blogs.",
+  title: "Letterpad - A free blog publishing platform",
+  siteName: "Letterpad - A free blog publishing platform",
+  description:
+    "Letterpad is a free blog publishing platform. It provides distraction free writing and uses language tool to help you write better. Best suited for personal blogs.",
   url: "https://letterpad.app",
   image:
     "https://res.cloudinary.com/abhisheksaha/image/upload/v1637920329/blog-images/f1exwgzylshcklpdsrxw.png",
