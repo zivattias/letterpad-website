@@ -3,6 +3,7 @@ import * as React from "react";
 import Analytics from "@/components/analytics/analytics";
 // import AiEditor from "@/components/ai-editor/AiEditor";
 import { Comparison } from "@/components/comparison/comparison";
+import { Creatives } from "@/components/creatives/creatives";
 import { Features } from "@/components/features/features";
 import Hero from "@/components/hero/hero";
 import { PostImage } from "@/components/post-image/post-image";
@@ -21,6 +22,10 @@ export default function Homepage() {
         </div>
         <div className='mx-auto mt-20 lg:mt-0 lg:w-4/5'>
           <Features />
+        </div>
+
+        <div className='mx-auto mt-20 lg:mt-0 lg:w-4/5'>
+          <Creatives />
         </div>
 
         <div className='relative z-10'>

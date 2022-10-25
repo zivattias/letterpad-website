@@ -22,12 +22,12 @@ export const Features = () => {
                   height='24'
                   alt='Fast and Flexible'
                 />
-                Fast and Flexible
+                Creatives
               </h6>
               <p className='mt-3 mb-4 text-sm text-gray-500'>
-                Letterpad uses Graphql which makes your blog faster due to
-                minimal data fetching. This also makes it possible to create a
-                client with any language.
+                With creatives you can create a custom landing page for your
+                blog and also to showcase portfolios, events, art, tutorials and
+                more.
               </p>
             </div>
           </div>
