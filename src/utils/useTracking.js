@@ -1,20 +1,14 @@
 import { useLocation } from "react-router";
 import { useEffect } from "react";
 
-export enum EventAction {
-  Load = "load",
-  View = "view",
-  Click = "click",
-  Change = "change",
-}
+export const EventAction = {
+  Load: "load",
+  View: "view",
+  Click: "click",
+  Change: "change",
+};
 
-export interface EventInfo {
-  eventCategory: string;
-  eventAction: EventAction;
-  eventLabel: string;
-}
-
-export const track = (info: EventInfo) => {
+export const track = (info) => {
   if (typeof window === "undefined") return;
   if (typeof window.ga === "undefined") return;
   window.ga("send", {
@@ -22,15 +16,6 @@ export const track = (info: EventInfo) => {
     ...info,
   });
 };
-
-
-declare global {
-  interface Window {
-    dataLayer: any;
-    gtag: any;
-    ga: any;
-  }
-}
 
 const trackingId = "UA-120251616-1";
 
@@ -71,12 +56,12 @@ export const useTracking = () => {
     // if (process.env.NODE_ENV !== "production") return;
     setTimeout(() => {
       if (typeof window.ga === "undefined") return;
-      const page =  location.pathname;
+      const page = location.pathname;
       window.ga("send", "pageview", page);
     }, 0);
   }, [location.pathname]);
 
-  const track = (info: EventInfo) => {
+  const track = (info) => {
     if (typeof window === "undefined") return;
     if (typeof window.ga === "undefined") return;
     window.ga("send", {
@@ -87,4 +72,3 @@ export const useTracking = () => {
 
   return track;
 };
-
