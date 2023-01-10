@@ -31,13 +31,29 @@ function Header() {
                   onClick={() => {
                     track({
                       eventAction: EventAction.Click,
-                      eventCategory: "login",
-                      eventLabel: `navbar`,
+                      eventCategory: "navbar",
+                      eventLabel: `login`,
                     });
                   }}
                 >
                   Sign in
                 </Link>
+              </li>
+              <li>
+                <a
+                  className='font-medium text-gray-400 hover:text-blue-500 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'
+                  href='https://demo.letterpad.app'
+                  target="_blank"
+                  onClick={() => {
+                    track({
+                      eventAction: EventAction.Click,
+                      eventCategory: "navbar",
+                      eventLabel: `demo`,
+                    });
+                  }}
+                >
+                  Demo Blog
+                </a>
               </li>
               <li className='ml-3'>
                 <Link
@@ -46,8 +62,8 @@ function Header() {
                   onClick={() => {
                     track({
                       eventAction: EventAction.Click,
-                      eventCategory: "register",
-                      eventLabel: `navbar`,
+                      eventCategory: "navbar",
+                      eventLabel: `register`,
                     });
                   }}
                 >
@@ -57,6 +73,7 @@ function Header() {
                   </span>
                 </Link>
               </li>
+              
             </ul>
           </nav>
         </div>
