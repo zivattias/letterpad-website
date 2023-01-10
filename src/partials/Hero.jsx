@@ -29,15 +29,15 @@ function Hero() {
         <div className='pt-32 pb-12 md:pt-40 md:pb-20'>
           {/* Hero content */}
           <div className='max-w-xl mx-auto md:max-w-[640px] md:mx-0 text-center md:text-left'>
-            <div data-aos='zoom-out' className='hidden'>
+            <div data-aos='zoom-out'>
               <div className="relative text-sm text-gray-300 bg-gray-800 rounded-full inline-block px-4 py-1 mb-6 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
                 <div className='text-gray-400'>
-                  Launching Infinite Workspaces.{" "}
+                  Launched Creatives.{" "}
                   <a
                     className='font-medium text-blue-500 inline-flex items-center transition duration-150 ease-in-out group'
-                    href='#0'
+                    href='/admin/try-creatives'
                   >
-                    Learn More{" "}
+                    Check Demo{" "}
                     <span className='tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1'>
                       -&gt;
                     </span>
