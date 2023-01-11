@@ -17,7 +17,7 @@ function Features02() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-uncut-sans mb-4">Delivers rediculous speed and performance</h2>
+            <h2 className="h2 font-uncut-sans mb-4">Delivers ridiculous speed and performance</h2>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-400">Letterpad is a highly performant blogging platform that runs at lightning speed, making it a great choice for users who want a smooth and seamless experience..</p>
             </div>
@@ -40,7 +40,7 @@ function Features02() {
                     <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Style your brand with our customising tools</span>
+                    <span>Customise layout and brand colors</span>
                   </li>
                   <li className="flex items-center">
                     <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@ function Features02() {
                     <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Its free!</span>
+                    <span>Map your custom domain</span>
                   </li>
                 </ul>
               </div>
