@@ -53,7 +53,7 @@ export const useTracking = () => {
 
   // track events automatically
   useEffect(() => {
-    // if (process.env.NODE_ENV !== "production") return;
+    if (process.env.NODE_ENV !== "production") return;
     setTimeout(() => {
       if (typeof window.ga === "undefined") return;
       const page = location.pathname;

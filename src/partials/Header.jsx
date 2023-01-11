@@ -52,7 +52,7 @@ function Header() {
                     });
                   }}
                 >
-                  Demo Blog
+                  Demo
                 </a>
               </li>
               <li className='ml-3'>
